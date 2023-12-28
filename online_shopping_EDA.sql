@@ -48,6 +48,7 @@ SELECT
     NTILE(5) OVER(ORDER BY monetary_score ASC) AS M
 FROM base
 
+-- View the distribution and summary of the RFM groups
 WITH base AS (
     SELECT 
         CustomerID,
@@ -75,9 +76,17 @@ SELECT
 FROM rfm_view
 INNER JOIN 
 	base
-	ON base.CustomerID = rfm.CustomerID
+	ON base.CustomerID = rfm_view.CustomerID
 GROUP BY (R + F+ M)/3
 ORDER BY RFM_group 
+
+--Who are the best customers?
+SELECT *
+FROM rfm_view
+WHERE 
+	R = 5
+	AND F = 5
+	AND M = 5
 
 /*As we now know the RFM score of the customers, we would like to know the information of loyal customers
 */
@@ -109,7 +118,7 @@ WHERE CustomerID IN (SELECT CustomerID FROM rfm_cal)
 ORDER BY total_customers DESC
 
 /*Chicago is the leader and majority customers are female and they have the highest tenure years*
-Can see that women purchased more than men*/
+We can see that women purchased more than men*/
 
 --At what time of the year customers will buy more?
 ALTER TABLE FactTransactions
