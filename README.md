@@ -1,4 +1,4 @@
-SQL ONLINE SHOPPING PROJECT
+# SQL ONLINE SHOPPING PROJECT
 
 The project uses the dataset which contains information about customers and historical purchase records.
 
