@@ -18,10 +18,10 @@ The project aims to clean and explore the customers' purchase behavior and do th
 * Step 4: Explore the data and perform RFM analysis
 
 4. Problem statements:
-Sales Analysis:
-What months have the highest sales?
-What are the top 5 product categories that generate the most revenue in each month?
-RFM Analysis:
-What is the distribution of customers by RFM score?
-Who are the best customers?
-What are the characteristics of loyal customers?
+- Sales Analysis:
+  * What months have the highest sales?
+  * What are the top 5 product categories that generate the most revenue in each month?
+- RFM Analysis:
+  * What is the distribution of customers by RFM score?
+  * Who are the best customers?
+  * What are the characteristics of loyal customers?
