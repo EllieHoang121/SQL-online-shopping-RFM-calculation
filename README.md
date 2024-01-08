@@ -2,6 +2,8 @@
 
 The project uses the dataset which contains information about customers and historical purchase records.
 
+Data Source: The dataset was sourced from https://www.kaggle.com/datasets/jacksondivakarr/online-shopping-dataset
+
 1. What is RFM analysis?
 
 RFM analysis is a marketing technique used to rank and group customers quantitatively based on Recency, Frequency, and Monetary values to gain insights into their buying behavior. The idea is to segment customers based on their last purchase, how often they have purchased in the past, and how much they have spent overall. 
